@@ -86,10 +86,11 @@ namespace VendorTracker.Tests
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
       //Arrange
-      string description = "Walk the dog.";
-      Order newOrder = new Order(description);
+      string bread = "Buns";
+      string pastry = "Cupcakes";
+      Order newOrder = new Order(bread, pastry);
       List<Order> newList = new List<Order> { newOrder };
-      string name = "Work";
+      string name = "Purchase";
       Vendor newVendor = new Vendor(name);
       newVendor.AddOrder(newOrder);
 
