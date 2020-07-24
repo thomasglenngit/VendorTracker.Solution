@@ -59,21 +59,22 @@ namespace VendorTracker.Tests
         Assert.AreEqual(updatedPastry, result2);
       }
 
-    //   [TestMethod]
-    //   public void GetAll_ReturnsEmptyList_Or 
-    //     List<Order> newList = new List<Order> { };
+      [TestMethod]
+      public void GetAll_ReturnsEmptyList_OrderList() 
+      {
+        List<Order> newList = new List<Order> { };
 
-    //     //Act
-    //     List<Order> result = Order.GetAll();
+        //Act
+        List<Order> result = Order.GetAll();
 
-    //     // foreach (Order thisOrder in result)
-    //     // {
-    //     //   Console.WriteLine("Output from second GetAll test: " + thisOrder.Description);
-    //     // }
+        // foreach (Order thisOrder in result)
+        // {
+        //   Console.WriteLine("Output from second GetAll test: " + thisOrder.Description);
+        // }
 
-    //     //Assert
-    //     CollectionAssert.AreEqual(newList, result);
-    //   }
+        //Assert
+        CollectionAssert.AreEqual(newList, result);
+      }
 
     //   [TestMethod]
     //   public void GetAll_ReturnsOrders_OrderList()
