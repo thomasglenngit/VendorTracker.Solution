@@ -124,11 +124,11 @@ namespace VendorTracker.Tests
     
       //Act
       // Order result1 = Order.Find(1);
-      Order result2 = Order.Find(2);
+      Order result = Order.Find(2);
   
       //Assert  
       // Assert.AreEqual(newOrder1, result);
-      Assert.AreEqual(); 
+      Assert.AreEqual(newOrder2, result); 
     }
   }   
 }
