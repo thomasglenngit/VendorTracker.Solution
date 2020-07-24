@@ -36,43 +36,31 @@ namespace VendorTracker.Tests
         //Assert
         Assert.AreEqual(bread, result1);
         Assert.AreEqual(pastry, result2);
+      }  
+
+    [TestMethod]
+      public void SetFoodOrder_SetFoodOrder_String()
+      {
+        //Arrange
+        string bread = "Buns";
+        string pastry = "Cupcakes";
+        Order newOrder = new Order(bread, pastry);
+
+        //Act
+        string updatedBread = "Whole-wheat Loaf";
+        string updatedPastry = "Éclair";
+        newOrder.Bread = updatedBread;
+        newOrder.Pastry = updatedPastry;
+        string result1 = newOrder.Bread;
+        string result2 = newOrder.Pastry;
+
+        //Assert
+        Assert.AreEqual(updatedBread, result1);
+        Assert.AreEqual(updatedPastry, result2);
       }
 
-      // [TestMethod]
-      // public void GetPastry_ReturnsPastry_String()
-      // {
-      //   //Arrange
-      //   string pastry = "Cupcakes";
-
-      //   //Act
-      //   Order newOrder = new Order(pastry);
-      //   string result = newOrder.Pastry;
-
-      //   //Assert
-      //   Assert.AreEqual(pastry, result);
-
-      // }
-
-    // [TestMethod]
-    //   public void SetDescription_SetDescription_String()
-    //   {
-    //     //Arrange
-    //     string description = "Walk the dog.";
-    //     Order newOrder = new Order(description);
-
-    //     //Act
-    //     string updatedDescription = "Do the dishes";
-    //     newOrder.Description = updatedDescription;
-    //     string result = newOrder.Description;
-
-    //     //Assert
-    //     Assert.AreEqual(updatedDescription, result);
-    //   }
-
     //   [TestMethod]
-    //   public void GetAll_ReturnsEmptyList_OrderList()
-    //   {
-    //     //Arrange
+    //   public void GetAll_ReturnsEmptyList_Or 
     //     List<Order> newList = new List<Order> { };
 
     //     //Act
@@ -120,7 +108,7 @@ namespace VendorTracker.Tests
 
     // [TestMethod]
     // public void Find_ReturnsCorrectOrder_Order()
-    // {
+    // {  
     //   //Arrange
     //   string description01 = "Walk the dog.";
     //   string description02 = "Wash the dishes.";
