@@ -101,7 +101,7 @@ namespace VendorTracker.Tests
       //Arrange
       string bread = "Whole-wheat";
       string pastry = "Croissant";
-      Order newOrder = new Order( );
+      Order newOrder = new Order(bread, pastry);
 
       //Act
       int result = newOrder.Id;
