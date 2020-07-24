@@ -80,10 +80,12 @@ namespace VendorTracker.Tests
       public void GetAll_ReturnsOrders_OrderList()
       {
         //Arrange
-        string Bread = "Walk the dog";
-        string Pastry = "Wash the dishes";
-        Order newOrder1 = new Order(Bread);
-        Order newOrder2 = new Order(Pastry);
+        string bread1 = "Buns";
+        string bread2 = "Wheat";
+        string pastry1 = "Croissants";
+        string pastry2 = "Madeleines";
+        Order newOrder1 = new Order(bread1, pastry1);
+        Order newOrder2 = new Order(bread2, pastry2);
         List<Order> newList = new List<Order> { newOrder1, newOrder2 };
 
         //Act
