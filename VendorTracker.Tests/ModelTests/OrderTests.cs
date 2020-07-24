@@ -95,19 +95,20 @@ namespace VendorTracker.Tests
         CollectionAssert.AreEqual(newList, result);
       }
 
-    //   [TestMethod]
-    // public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
-    // {
-    //   //Arrange
-    //   string description = "Walk the dog.";
-    //   Order newOrder = new Order(description);
+      [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      //Arrange
+      string bread = "Whole-wheat";
+      string pastry = "Croissant";
+      Order newOrder = new Order( );
 
-    //   //Act
-    //   int result = newOrder.Id;
+      //Act
+      int result = newOrder.Id;
 
-    //   //Assert
-    //   Assert.AreEqual(1, result);
-    // }
+      //Assert
+      Assert.AreEqual(1, result);
+    }
 
     // [TestMethod]
     // public void Find_ReturnsCorrectOrder_Order()
