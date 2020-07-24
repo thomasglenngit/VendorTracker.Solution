@@ -1,4 +1,16 @@
-<h1>Add a new order to @Model.VendorName's collection.</h1>
+<h1>Add a new order to @Model.Name's collection.</h1>
+
+<p>Choose from our list:</p>
+<p>Bread Loaves: </p>
+<p>White, Wheat, Multigrain, Rye</p>
+<p>$5 each, buy 2, get one free.</p>
+
+<p>Choose from our list:</p>
+<p>Pastries: </p>
+<p>Madeleines, Cupcakes, Muffins, Doughnuts, Croissants</p>
+<p>$2 each, 3 for $5.</p>
+
+
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
