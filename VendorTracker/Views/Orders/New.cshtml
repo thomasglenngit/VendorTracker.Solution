@@ -14,6 +14,12 @@
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="title">Vendor's job title</label>
+  <input id="title" name="title" type="text">
+  <label for="date">Today's Date</label>
+  <input id="date" name="date" type="date">
+  <label for="description">Order description:</label>
+  <input id="description" name="description" type="text">
   <label for="bread">Bread Order</label>
   <input id="bread" name="bread" type="text">
   <label for="pastry">Pastry Order</label>

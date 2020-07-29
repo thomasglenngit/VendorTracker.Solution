@@ -1,11 +1,11 @@
 @using VendorTracker.Models;
 
-<h3>Here are all the orders in this vendor:</h3>
+<h3>Here are all the orders for this vendor:</h3>
 
 <ol>
 @foreach (Order order in @Model["orders"])
 {
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Bread and @order.Pastry</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>Hello, for this order, @order.Title, @order.Description, this order includes @order.Bread bread orders, and @order.Pastry Pastry orders. </a></li>
 }
 </ol>
 
