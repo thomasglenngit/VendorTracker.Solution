@@ -32,7 +32,7 @@ namespace VendorTracker.Tests
         string date = "January";
 
         //Act
-        Order newOrder = new Order(bread, pastry, title, description);
+        Order newOrder = new Order(bread, pastry, title, description, date);
         string result1 = newOrder.Bread;
         string result2 = newOrder.Pastry;
 
