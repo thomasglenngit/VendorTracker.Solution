@@ -104,7 +104,7 @@ namespace VendorTracker.Tests
         string description = "The Boss";
         string date = "Birthday";
         Order newOrder1 = new Order(bread1, pastry1, title, description, date);
-        Order newOrder2 = new Order(bread2, pastry2, title, description, );
+        Order newOrder2 = new Order(bread2, pastry2, title, description, date);
         List<Order> newList = new List<Order> { newOrder1, newOrder2 };
 
         //Act
