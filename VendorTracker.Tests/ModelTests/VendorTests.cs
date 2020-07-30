@@ -95,7 +95,7 @@ namespace VendorTracker.Tests
       string title = "CEO";
       string description = "Chief Operations Officer";
       string date = "Arbor Day";
-      Order newOrder = new Order(bread, pastry, title, description, );
+      Order newOrder = new Order(bread, pastry, title, description, date);
       List<Order> newList = new List<Order> { newOrder };
       string name = "Purchase";
       Vendor newVendor = new Vendor(name, description);
