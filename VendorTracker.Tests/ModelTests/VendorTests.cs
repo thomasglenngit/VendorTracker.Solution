@@ -42,7 +42,7 @@ namespace VendorTracker.Tests
       //Arrange
       string name = "Test Vendor";
       string description = "The best test vendor";
-      Vendor newVendor = new Vendor(name, );
+      Vendor newVendor = new Vendor(name, description);
 
       //Act
       int result = newVendor.Id;
