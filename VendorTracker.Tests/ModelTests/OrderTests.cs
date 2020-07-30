@@ -123,7 +123,7 @@ namespace VendorTracker.Tests
         string title = "President";
         string description = "Important";
         string date = "Today";
-        Order newOrder = new Order(bread, pastry, title, description, );
+        Order newOrder = new Order(bread, pastry, title, description, date);
 
         //Act
         int result = newOrder.Id;
