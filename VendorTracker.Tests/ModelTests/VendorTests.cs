@@ -76,8 +76,8 @@ namespace VendorTracker.Tests
       string name01 = "Work";
       string name02 = "School";
       string description = "Fun stuff";
-      Vendor newVendor1 = new Vendor(name01);
-      Vendor newVendor2 = new Vendor(name02);
+      Vendor newVendor1 = new Vendor(name01, description);
+      Vendor newVendor2 = new Vendor(name02, description);
 
       //Act
       Vendor result = Vendor.Find(2);
