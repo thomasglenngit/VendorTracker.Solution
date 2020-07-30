@@ -41,26 +41,39 @@ namespace VendorTracker.Tests
         Assert.AreEqual(pastry, result2);
       }  
 
-    // [TestMethod]
-    //   public void SetFoodOrder_SetFoodOrder_String()
-    //   {
-    //     //Arrange
-    //     string bread = "Buns";
-    //     string pastry = "Cupcakes";
-    //     Order newOrder = new Order(bread, pastry);
+    [TestMethod]
+      public void SetFoodOrder_SetFoodOrder_String()
+      {
+        //Arrange
+        string bread = "Buns";
+        string pastry = "Cupcakes";
+        Order newOrder = new Order(bread, pastry, title, description, );
 
-    //     //Act
-    //     string updatedBread = "Whole-wheat Loaf";
-    //     string updatedPastry = "Éclair";
-    //     newOrder.Bread = updatedBread;
-    //     newOrder.Pastry = updatedPastry;
-    //     string result1 = newOrder.Bread;
-    //     string result2 = newOrder.Pastry;
+        //Act
+        string updatedBread = "Whole-wheat Loaf";
+        string updatedPastry = "Éclair";
+        string updatedTitle = "Majesty";
+        string updatedDescription = "Royalty";
+        string updatedDate = "February";
+        newOrder.Bread = updatedBread;
+        newOrder.Pastry = updatedPastry;
+        newOrder.Title = updatedTitle; 
+        newOrder.Description = updatedDescription;
+        newOrder.Date = updatedDate;
+        string result1 = newOrder.Bread;
+        string result2 = newOrder.Pastry;
+        string result3 = newOrder.Title;
+        string result4 = newOrder.Description;
+        string result5 = newOrder.Date;
 
-    //     //Assert
-    //     Assert.AreEqual(updatedBread, result1);
-    //     Assert.AreEqual(updatedPastry, result2);
-    //   }
+        //Assert
+        Assert.AreEqual(updatedBread, result1);
+        Assert.AreEqual(updatedPastry, result2);
+        Assert.AreEqual(updatedTitle, result3);
+        Assert.AreEqual(updatedDescription, result4);
+        Assert.AreEqual(, result5);
+
+      }
 
     //   [TestMethod]
     //   public void GetAll_ReturnsEmptyList_OrderList() 
