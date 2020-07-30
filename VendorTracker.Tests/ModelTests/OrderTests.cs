@@ -114,20 +114,23 @@ namespace VendorTracker.Tests
         CollectionAssert.AreEqual(newList, result);
       }
 
-    //   [TestMethod]
-    // public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
-    // {
-    //   //Arrange
-    //   string bread = "Whole-wheat";
-    //   string pastry = "Croissant";
-    //   Order newOrder = new Order(bread, pastry);
+      [TestMethod]
+      public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+      {
+        //Arrange
+        string bread = "Whole-wheat";
+        string pastry = "Croissant";
+        string title = "President";
+        string description = "Important";
+        string date = "Today";
+        Order newOrder = new Order(bread, pastry, title, description, );
 
-    //   //Act
-    //   int result = newOrder.Id;
+        //Act
+        int result = newOrder.Id;
 
-    //   //Assert
-    //   Assert.AreEqual(1, result);
-    // }
+        //Assert
+        Assert.AreEqual(1, result);
+      }
 
     // [TestMethod]
     // public void Find_ReturnsCorrectOrder_Order()
