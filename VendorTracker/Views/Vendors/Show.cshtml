@@ -1,14 +1,25 @@
 @using VendorTracker.Models;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <body>
+    <div class="container">
+    <h3>Here are all the orders for this vendor:</h3>
 
-<h3>Here are all the orders for this vendor:</h3>
+      <ol>
+      @foreach (Order order in @Model["orders"])
+      {
+        <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>Hello, for this order, @order.Title, @order.Description, this order includes @order.Bread bread orders, and @order.Pastry Pastry orders. </a></li>
+      }
+      </ol>
 
-<ol>
-@foreach (Order order in @Model["orders"])
-{
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>Hello, for this order, @order.Title, @order.Description, this order includes @order.Bread bread orders, and @order.Pastry Pastry orders. </a></li>
-}
-</ol>
-
-<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
-<p><a href='/vendors'>Return to vendor list</a></p>
-<p><a href='/'>Return to Main Page</a></p>
+  <p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
+  <p><a href='/vendors'>Return to vendor list</a></p>
+  <p><a href='/'>Return to Main Page</a></p>
+  </div>
+</body>
+</html>
