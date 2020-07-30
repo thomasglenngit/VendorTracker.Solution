@@ -23,7 +23,7 @@ namespace VendorTracker.Models
             Pastry = pastry;
             Title = title;
             Description = description;
-            Date = Date;
+            Date = date;
             _instances.Add(this);
             Id = _instances.Count;
         }

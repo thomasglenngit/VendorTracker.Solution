@@ -47,7 +47,10 @@ namespace VendorTracker.Tests
         //Arrange
         string bread = "Buns";
         string pastry = "Cupcakes";
-        Order newOrder = new Order(bread, pastry, title, description, );
+        string title = "Pauper";
+        string description = "Lowerclass";
+        string date = "January";
+        Order newOrder = new Order(bread, pastry, title, description, date);
 
         //Act
         string updatedBread = "Whole-wheat Loaf";
@@ -71,7 +74,7 @@ namespace VendorTracker.Tests
         Assert.AreEqual(updatedPastry, result2);
         Assert.AreEqual(updatedTitle, result3);
         Assert.AreEqual(updatedDescription, result4);
-        Assert.AreEqual(, result5);
+        Assert.AreEqual(updatedDate, result5);
 
       }
 
