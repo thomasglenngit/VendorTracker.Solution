@@ -21,22 +21,25 @@ namespace VendorTracker.Tests
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
-    //   [TestMethod]
-    //   public void GetFoodOrder_ReturnsFoodOrder_String()
-    //   {
-    //     //Arrange
-    //     string bread = "Buns";
-    //     string pastry = "Cupcakes";
+      [TestMethod]
+      public void GetFoodOrder_ReturnsFoodOrder_String()
+      {
+        //Arrange
+        string bread = "Buns";
+        string pastry = "Cupcakes";
+        string title = "Spartacus";
+        string description = "Roman";
+        string date = "January";
 
-    //     //Act
-    //     Order newOrder = new Order(bread, pastry);
-    //     string result1 = newOrder.Bread;
-    //     string result2 = newOrder.Pastry;
+        //Act
+        Order newOrder = new Order(bread, pastry, title, description);
+        string result1 = newOrder.Bread;
+        string result2 = newOrder.Pastry;
 
-    //     //Assert
-    //     Assert.AreEqual(bread, result1);
-    //     Assert.AreEqual(pastry, result2);
-    //   }  
+        //Assert
+        Assert.AreEqual(bread, result1);
+        Assert.AreEqual(pastry, result2);
+      }  
 
     // [TestMethod]
     //   public void SetFoodOrder_SetFoodOrder_String()
