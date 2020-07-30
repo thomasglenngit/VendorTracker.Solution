@@ -14,12 +14,12 @@ namespace VendorTracker.Tests
       Vendor.ClearAll();
     }
 
-    // [TestMethod]
-    // public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
-    // {
-    //   Vendor newVendor = new Vendor("test Vendor");
-    //   Assert.AreEqual(typeof(Vendor), newVendor.GetType());
-    // }
+    [TestMethod]
+    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
+    {
+      Vendor newVendor = new Vendor("Louis", );
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
 
     // [TestMethod]
     // public void GetName_ReturnsName_String()
