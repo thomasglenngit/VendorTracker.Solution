@@ -13,7 +13,6 @@ namespace VendorTracker.Models
 
         public string Date { get; set; }
 
-        // public string Date { get; set; }
         public int Id { get; }
         private static List<Order> _instances = new List<Order> { };
 
@@ -27,20 +26,6 @@ namespace VendorTracker.Models
             _instances.Add(this);
             Id = _instances.Count;
         }
-
-        // public void AddItems(int numberOfItems)
-        // {
-        //     Quantity += numberOfItems;
-        // }
-
-        // public void CalculateOrder()
-        // {
-        //     foreach (Order order in _instances)
-        //     {
-        //         TotalPrice = Price * Quantity;
-        //     }
-
-        // }
 
         public static List<Order> GetAll()
         {

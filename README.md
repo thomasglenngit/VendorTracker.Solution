@@ -10,9 +10,10 @@ A program that tracks the orders for different vendors connected to lucky Pierre
 ## Specifications
 | Spec | Input | Output | Test Result |
 |:--------- |:--------- |:-------- |:---------|
-| The program will construct vendors and orders | | |
-| The program will allow the user to create lists of orders | | |
-| The program will allow the user to adjust vendor and order lists | | | 
+| The program will construct vendors | "Name", "Description" | "Greasy Jim", "Tallahassee Bakery"| Passed |
+| The program will construct orders | "Bread", "Pastry", "Title", "Description", "Date" | "Baguette", "Crueller", "7-Eleven", "Convenience Store" |
+| The program will allow the user to create lists of orders | "Create a List" | "My New Pastry List" | Passed |
+| The program will allow the user to adjust vendor and order lists | "Edit list" | "My Old Pastry List" | 
 
 ## Known Bugs
 * No known bugs.   
