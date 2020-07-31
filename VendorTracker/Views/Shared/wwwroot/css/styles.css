@@ -1,0 +1,35 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-size: 15px;
+  color: lavender;
+}
+
+
+li{
+  color: lavender;
+  font-weight: bolder;
+  text-shadow: .5px .5px black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  padding: 5px;
+}
+
+body{
+  background-image: url(http://www.nyhabitat.com/blog/wp-content/uploads/2014/01/french-bread-bakery-baguette-traditional.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 15px;
+}
+.footer{
+  font-size: 20px;
+  bottom: 0%;
+  position: fixed;
+}
