@@ -1,6 +1,6 @@
-<h1 align='center'> _Pierre's Vendor Tracker_
+**<h1 align='center'> _Pierre's Vendor Tracker_**
 
-<h1 align='center'> C#/.NET Project for [Epicodus](https://www.epicodus.com/), 2020.07.24
+*<h1 align='center'> C#/.NET Project for [Epicodus](https://www.epicodus.com/), 2020.07.24*
 <h1 align='center'> By **Thomas Glenn**
 
 
