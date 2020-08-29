@@ -1,11 +1,15 @@
-# _Pierre's Vendor Tracker_
+**<h1 align='center'> _Pierre's Vendor Tracker_*
 
-#### _C#/.NET Project for [Epicodus](https://www.epicodus.com/), 2020.07.24_
+**<h1 align='center'> C#/.NET Project for [Epicodus](https://www.epicodus.com/), 2020.07.24*
 
-#### By **Thomas Glenn**
+**<h1 align='center'> By **Thomas Glenn***
 
+
+<h1 align='center'><img width='900' height='450' src='https://s1.r29static.com/bin/entry/75a/0,200,5331,2799/x,80/1881880/image.jpg'><br>
+  
+  
 ## Description
-A program that tracks the orders for different vendors connected to lucky Pierre. 
+A program that tracks the orders for different vendors connected to bakery chain owner, Lucky Pierre. 
 
 
 
@@ -13,9 +17,9 @@ A program that tracks the orders for different vendors connected to lucky Pierre
 | Spec | Input | Output | Test Result |
 |:--------- |:--------- |:-------- |:---------|
 | The program will construct vendors | "Name", "Description" | "Greasy Jim", "Tallahassee Bakery"| Passed |
-| The program will construct orders | "Bread", "Pastry", "Title", "Description", "Date" | "Baguette", "Crueller", "7-Eleven", "Convenience Store" |
+| The program will construct orders | "Bread", "Pastry", "Title", "Description", "Date" | "Baguette", "Crueller", "7-Eleven", "Convenience Store" | Passed |
 | The program will allow the user to create lists of orders | "Create a List" | "My New Pastry List" | Passed |
-| The program will allow the user to adjust vendor and order lists | "Edit list" | "My Old Pastry List" | 
+| The program will allow the user to adjust vendor and order lists | "Edit list" | "My Old Pastry List" | Passed |
 
 ## Known Bugs
 * No known bugs.   
