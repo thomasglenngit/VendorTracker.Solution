@@ -1,7 +1,7 @@
 **<h1 align='center'> _Pierre's Vendor Tracker_**
 
 *<h1 align='center'> C#/.NET Project for [Epicodus](https://www.epicodus.com/), 2020.07.24*
-<h1 align='center'> By **Thomas Glenn**
+*<h1 align='center'> By Thomas Glenn*
 
 
 <h1 align='center'><img width='900' height='450' src='https://s1.r29static.com/bin/entry/75a/0,200,5331,2799/x,80/1881880/image.jpg'><br>
